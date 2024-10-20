@@ -12,7 +12,7 @@ function Stripes() {
         {url: "https://cdn.prod.website-files.com/664dc8b6bc52b504509197f0/666359b62de955b9aa4d2dd0_64868959b481181dd14c03a2_Silvr_logo_white.png" , number: "83"}
     ]
   return (
-    <div className='flex items-center my-44 '  >
+    <div className='flex flex-wrap justify-center md:justify-start md:flex-nowrap  items-center my-44 '  >
     {data.map((ele,idx) =>(
         <Stripe val={ele} />
     ) )}

@@ -2,7 +2,7 @@ import Button from "./Button";
 
 function Navbar() {
   return (
-    <div className="max-w-screen-xl  py-6 items-center justify-between flex mx-auto border-b-[1px] border-zinc-700">
+    <div className="max-w-screen-xl  py-6 items-center justify-between flex flex-col md:flex-row mx-auto border-b-[1px] border-zinc-700">
       <div className="nleft flex items-center">
         <img
           className="pl-2"

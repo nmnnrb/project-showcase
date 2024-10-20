@@ -73,11 +73,11 @@ function Products() {
     setPos(val*23); 
   }
   return (
-    <div className=" relative">
+    <div className="  md:relative">
       {products.map((item , index) => (
         <Product count={index} mover={mover} data={item} bgColor={backgroundColors[index]} />
       ))}
-      <div className="w-full  pointer-events-none h-full absolute top-10">
+      <div className="w-full hidden md:flex pointer-events-none h-full absolute top-10">
         <motion.div
           initial={{ y: pos, x: "-50%" }}
           animate={{y: pos +`rem`}}
