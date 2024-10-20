@@ -143,7 +143,7 @@ function Products() {
   width="100%"
   height="100%"
   style={{ borderRadius: '12px' }}
-  src="/public/localshop.mp4"
+  src="/localshop.mp4"
   poster=""
 />
 
