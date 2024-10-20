@@ -38,7 +38,7 @@ function Navbar() {
         </div>
       </div>
 
-      <Button title={"Contact Me"} click={"https://www.linkedin.com/feed/"} />
+      <Button title={"Contact Me"} click={"http://bit.ly/Namanportfolio"} />
     </div>
   );
 }
