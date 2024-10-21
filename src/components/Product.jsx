@@ -9,7 +9,7 @@ function Product({data , mover ,count , bgColor}) {
     }}
     onMouseLeave={() => setBgColorr("transparent")} // Reset on mouse leave
   >
-        <div onMouseEnter={() => {mover(count)} } key={count} className="max-w-screen-xl  md:h-[23rem]   mx-auto flex flex-col md:flex-row my-44 md:my-0 p-2 md:items-center md:justify-between">
+        <div onMouseEnter={() => {mover(count)} } key={count} className="max-w-screen-xl  md:h-[23rem]   mx-auto flex flex-col md:flex-row my-44 md:my-0  p-2 md:items-center md:justify-between">
           <div className="flex flex-wrap md:w-1/3"><h1 className='font-medium capitalize mb-6 md:mb-0 text-6xl' >{data.title}</h1></div>
             
             <div className="dets md:w-1/3 flex  flex-col  ">

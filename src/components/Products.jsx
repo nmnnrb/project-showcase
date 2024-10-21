@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 
 function Products() {
   const products = [
+   
     {
       title: "UserSphere",
       description:
@@ -49,23 +50,38 @@ function Products() {
     },  {
       title: "Local-Shop Display menu",
       description:
-        "This project began as a hands-on practice with React, focusing on integrating APIs to enhance my understanding of frontend development. As the project evolved, it took shape as a dynamic inventory management and display tool, tailored for local shops. Built entirely with React, the interface is designed to be user-friendly and efficient, allowing shop owners to effortlessly add, update, and manage their inventory. ",
+        "This project began as a hands-on practice with React, focusing on integrating APIs to enhance my understanding of frontend development. As the project evolved, it took shape as a dynamic inventory management and display tool, tailored for local shops. Built entirely with React. ",
       live: false,
       case: true,
       skills: "RectJS, Axios ",
       key: "Display the Products by taking details as input",
       livelink: "/",
       githublink: "https://github.com/nmnnrb/ecomm-display-menu"
-    }
+    },
+    {
+      title: "Project Showcase",
+      description:
+        "Implemented a dynamic video showcase using React and Framer Motion, offering a seamless user experience through interactive animations. Developed a responsive media container with motion.div to animate video displays, achieving smooth transitions with custom easing functions. Utilized state-based animations for precise control of video positioning, creating a parallax-like effect by adjusting y positions in real time. Enabled auto-play and loop functionality for embedded videos, ensuring continuous playback while maintaining a clean, overflow-hidden layout. ",
+      skills: "React, Motion Library",
+      key: "Scoll effect , sliderWindow , Smoothness",
+      live: true,
+      case: true,
+      livelink: "https://project-showcase-c9tu.onrender.com/",
+      githublink: "https://github.com/nmnnrb/project-showcase",
+    },
     
   ];
 
   const backgroundColors = [
-    "#FB523B", // Color for ARQUILE
-    "#4A576B", // Color for TTR
-    "#374151", // Color for YIRR
-    "#1e3a8a", // Color for YAHOO!
-    "#FB523B", // Color for Naman
+    "#4238E2", //1
+    "#FB523B", // 2
+    "#4A576B", // 3
+    "#0BA5E9", // 4
+    "#06d6bd", // 5
+    "#FB523B", // 6
+    // "#3D4856", // 7
+
+
   ];
 
   const [pos, setPos] = useState();
@@ -92,7 +108,7 @@ function Products() {
   height="100%"
   style={{ borderRadius: '12px' }}
   src="/UserSpher.mp4"
-  poster="https://cdn.prod.website-files.com/664dc8b6bc52b504509197f0/6697d42ab3e32fee7e9535ae_BCGP%20-%2016%209%20(A).webp"
+  poster="https://img.youtube.com/vi/NKemb7O2Z_Y/0.jpg"
 />
 
  </motion.div>
@@ -144,11 +160,37 @@ function Products() {
   height="100%"
   style={{ borderRadius: '12px' }}
   src="/localshop.mp4"
-  poster=""
+  poster="https://img.youtube.com/vi/MOz1FZvUdq0/0.jpg"
 />
 
           </motion.div>
-          <motion.div animate={{y: -pos +`rem`}} transition={{ease: [0, 0.55, 0.45, 1], duration: 0.4 }} className="w-full h-full  bg-sky-600"></motion.div>
+          <motion.div animate={{y: -pos +`rem`}} transition={{ease: [0, 0.55, 0.45, 1], duration: 0.4 }} className="w-full h-full ">
+          <video
+  autoPlay
+  loop
+  muted
+  playsInline
+  width="100%"
+  height="100%"
+  style={{ borderRadius: '12px' }}
+  src="/shocase.mp4"
+  poster="https://img.youtube.com/vi/bPbfQIcarsM/0.jpg"
+/>
+          </motion.div>
+
+          <motion.div animate={{y: -pos +`rem`}} transition={{ease: [0, 0.55, 0.45, 1], duration: 0.4 }} className="w-full h-full ">
+          <video
+  autoPlay
+  loop
+  muted
+  playsInline
+  width="100%"
+  height="100%"
+  style={{ borderRadius: '12px' }}
+  src="/shocase.mp4"
+  poster="https://img.youtube.com/vi/bPbfQIcarsM/0.jpg"
+/>
+          </motion.div>
         </motion.div>
       </div>
      </div>
